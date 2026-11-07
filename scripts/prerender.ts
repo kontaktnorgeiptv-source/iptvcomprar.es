@@ -28,7 +28,7 @@ const BRAND = "IPTV COMPRAR";
 // Must match index.html exactly — these are the anchors the template is patched on.
 const TPL_HTML_TAG = '<html lang="de">';
 const TPL_CANONICAL = `<link rel="canonical" href="${SITE}/" />`;
-const TPL_TITLE = "<title>IPTV Deutschland kaufen | Premium IPTV Anbieter</title>";
+const TPL_TITLE = "<title>IPTV COMPRAR | Comprar IPTV España — IPTV Premium</title>";
 
 const template = readFileSync(resolve(DIST, "index.html"), "utf8");
 
@@ -450,16 +450,30 @@ for (const tLang of HOME_LANGS) {
 
 // ---- homepage (per language) -----------------------------------------------
 const HOME_TITLE: Record<string, string> = {
+  es: "IPTV COMPRAR | Comprar IPTV España — IPTV Premium",
   de: "IPTV Deutschland kaufen | Premium IPTV Anbieter",
   en: "IPTV Germany | Buy German IPTV — Premium IPTV Provider",
   nl: "IPTV COMPRAR | Premium IPTV Abonnement & 4K Zenders",
 };
 const HOME_DESC: Record<string, string> = {
+  es: "Comprar IPTV en España con IPTV COMPRAR: 69.000+ canales en vivo, 220.000+ películas y series en hasta 8K. IPTV para Smart TV, Android y Fire TV, sin permanencia. ★ 4.9/5",
   de: "IPTV Deutschland kaufen bei Ihrem Premium IPTV Anbieter: 69.000+ Live-Sender, 220.000+ Filme & Serien in bis zu 8K. IPTV Abo für Smart TV, Android & Fire TV — ohne Vertrag.",
   en: "IPTV Germany made simple: buy German IPTV from a premium IPTV provider. 69,000+ live channels, 220,000+ movies & series in up to 8K. Works on Smart TV, Android & Fire TV.",
   nl: "IPTV COMPRAR op www.iptvcomprar.es: premium IPTV-abonnement. 69.000+ live zenders, 220.000+ films & series in tot 8K. IPTV kopen voor Smart TV, Android & Fire TV.",
 };
 const HOME_BODY: Record<string, string[]> = {
+  es: [
+    `<h1>Comprar IPTV en España — IPTV COMPRAR IPTV Premium 4K/8K</h1>`,
+    `<p>IPTV COMPRAR es tu proveedor de IPTV premium en España: al comprar IPTV obtienes más de 69.000 canales en vivo y 220.000 películas y series bajo demanda, en calidad de hasta 8K Ultra HD. Un abono IPTV sustituye el cable más Netflix, Disney+ y un paquete de deportes, a un precio transparente y sin permanencia. Compatible con Smart TV, Android, Fire TV, cajas MAG y más dispositivos.</p>`,
+    `<h2>¿Por qué comprar IPTV en IPTV COMPRAR?</h2>`,
+    `<ul>`,
+    `<li>69.000+ canales en vivo de España y toda Europa, incluidos LaLiga y Champions League</li>`,
+    `<li>220.000+ películas y series como VOD, actualizadas cada semana</li>`,
+    `<li>Calidad de imagen de hasta 8K Ultra HD</li>`,
+    `<li>Sin contrato, activación en minutos y soporte por WhatsApp</li>`,
+    `</ul>`,
+    `<p>Comprar IPTV nunca fue tan fácil: elige tu plan, paga de forma segura y empieza a ver IPTV en España en menos de 5 minutos.</p>`
+  ],
   de: [
     `<h1>IPTV Deutschland kaufen — Premium IPTV Abo bei Ihrem IPTV Anbieter</h1>`,
     `<p>IPTV COMPRAR ist Ihr Premium IPTV Anbieter für Deutschland: Wer IPTV kaufen möchte, bekommt hier über 69.000 Live-Sender und 220.000 Filme und Serien als Video-on-Demand — in bis zu 8K Ultra HD. Ein IPTV Abo ersetzt Kabel plus Netflix, Disney+ und ein Sportpaket, zu einem transparenten Preis und ohne Vertrag. Kompatibel mit Smart TV, Android, Fire TV, MAG-Boxen und weiteren Geräten.</p>`,
